@@ -15,14 +15,14 @@ function Orders() {
 
   useEffect(() => {
     async function fetchOrders() {
-      const { data: newOrders } = await axios.get('http://localhost:4000/orders')
+      const { data: newOrders } = await axios.get('http://localhost:3000/orders')
       setOrders(newOrders)
     }
     fetchOrders()
   }, [])
 
   async function deleteOrder(orderId) {
-    await axios.delete(`http://localhost:4000/orders/${orderId}`)
+    await axios.delete(`http://localhost:3000/orders/${orderId}`)
     const newOrders = orders.filter(order => order.id !== orderId)
     setOrders(newOrders)
   }
