@@ -22,7 +22,7 @@ function App() {
     if (inputOrder.current.value === '' && inputName.current.value === '') {
       alert('Coloque o pedido e seu nome')
     } else {
-      const { data: newOrder } = await axios.post('http://localhost:4000/orders', {
+      const { data: newOrder } = await axios.post('https://backend-burguer23.herokuapp.com/orders', {
         order: inputOrder.current.value,
         name: inputName.current.value,
       })

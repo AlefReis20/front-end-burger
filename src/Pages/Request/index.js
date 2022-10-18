@@ -18,14 +18,14 @@ function Orders() {
 
   useEffect(() => {
     async function fetchOrders() {
-      const { data: newOrders } = await axios.get('http://localhost:4000/orders')
+      const { data: newOrders } = await axios.get('https://backend-burguer23.herokuapp.com/orders')
       setOrders(newOrders)
     }
     fetchOrders()
   }, [])
 
   async function deleteOrder(orderId) {
-    await axios.delete(`http://localhost:4000/orders/${orderId}`)
+    await axios.delete(`https://backend-burguer23.herokuapp.com/orders/${orderId}`)
     const newOrders = orders.filter(order => order.id !== orderId)
     setOrders(newOrders)
   }
