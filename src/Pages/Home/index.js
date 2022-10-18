@@ -6,7 +6,11 @@ import axios from 'axios'
 
 import Logo from '../../assets/logo.svg'
 
-import { Container, Image, InputLabel, Input, Button, H1, ContainerItens } from './styles'
+import H1 from '../../components/Title'
+import Button from '../../components/Button'
+import ContainerItens from '../../components/ContainerItens'
+
+import { Container, Image, InputLabel, Input } from './styles'
 
 function App() {
   const [orders, setOrders] = useState([])
