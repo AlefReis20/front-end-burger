@@ -12,11 +12,6 @@ export const Container = styled.div`
   height: 100%;
   min-height: 100vh;
 `
-export const ContainerItens = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 76px 0;
-`
 export const Image = styled.img`
   margin-top: 15px;
 
@@ -52,40 +47,6 @@ export const Input = styled.input`
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-
-  color: #FFFFFF;
-`
-export const Button = styled.button`
-    width: 342px;
-    height: 68px;
-    margin-bottom: 51px;
-
-    background: #D93856;
-    border: none;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 17px;
-    line-height: 2px;
-
-    color: #FFFFFF;
-
-    cursor: pointer;
-
-    &:hover {
-        opacity: .8;
-    }
-
-    &:active {
-        opacity: .5;
-    }
-`
-export const H1 = styled.h1`
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 33px;
-
-  text-align: center;
 
   color: #FFFFFF;
 `
